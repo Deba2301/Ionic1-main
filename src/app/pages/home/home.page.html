@@ -1,29 +1,41 @@
+<!-- Header -->
 <ion-header>
-  <ion-toolbar color=" ">
-   
-  <ion-buttons slot>
-    
-<ion-menu-button></ion-menu-button>
-<ion-title>Rased-Employ Affairs</ion-title>
-
-</ion-buttons>
-</ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title class="ion-text-center">Rased-Employ Affairs</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <img src="../../../assets/images/Logo.jpeg" alt="">
-  <ion-card-title>Muath Almansour</ion-card-title>
-  <ion-icon name="calendar-outline"></ion-icon>
-  <ion-card-subtitle>30-4-2018 - 30-4-2018</ion-card-subtitle>
-  <ion-list lines="none">
-    
-  <ion-item class="input_field">
-  <ion-icon name="time-outline" ></ion-icon>
-  <ion-card-subtitle>7:30 AM  -  2:30 PM</ion-card-subtitle>
-</ion-item>
-</ion-list>
-<ion-card-subtitle>Your Inspection Task</ion-card-subtitle>
- </ion-card>
- 
-
-
+<!-- content -->
+<ion-content>
+  <ion-card class="ion-align-self-center">
+    <img class="avatar ion-align-self-center" src="../../../assets/images/avatar.png" alt="" />
+    <div class="card-content">
+      <ion-card-title class="ion-text-center">Muath Almansour</ion-card-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="">
+            <ion-icon class="ion-padding-end" name="calendar-outline" color="primary"></ion-icon>
+            <ion-text class="">30-4-2018 - 30-4-2018</ion-text>
+            <br>
+            <ion-icon class="ion-padding-end" name="time-outline" color="primary"></ion-icon>
+            <ion-text class="">7:30 AM - 2:30 PM</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <p class="card-content-footer">Your Inspection Task</p>
+      <ion-grid class="">
+        <ion-row class="">
+          <ion-col class="ion-text-center">1</ion-col>
+          <ion-col class="ion-text-center">0</ion-col>
+        </ion-row>
+        <ion-row class="">
+          <ion-col class="ion-text-center">NEW</ion-col>
+          <ion-col class="ion-text-center">COMPLETED</ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-card>
+</ion-content>
