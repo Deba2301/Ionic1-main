@@ -24,16 +24,16 @@ describe('LoginPageForm', ()=> {
  
 })
 it('should have email invalid if email is not valid', ()=>{
-    form.get('email')?.setValue('invalid email');
-    expect(form.get('email')?.valid).toBeFalsy();
+    form.get('GOSI Username')?.setValue('invalid email');
+    expect(form.get('GOSI Username')?.valid).toBeFalsy();
 })
-it('should have email valid if email is valid', () => {
-    form.get('email')?.setValue('valid@rmail.com');
+it('should have GOSI Username valid if GOSI Username is valid', () => {
+    form.get('GOSI Username')?.setValue('valid@rmail.com');
     expect(form.get('email')?.valid).toBeTruthy();
 
 })
 it ('should have a valid form', ()=> {
-    form.get('email')?.setValue('valid@email.com');
+    form.get('GOSI Username')?.setValue('valid@email.com');
     form.get('password')?.setValue("anyPAssword");
 
     expect(form.valid).toBeTruthy();
